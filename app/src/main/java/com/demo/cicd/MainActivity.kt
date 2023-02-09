@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        AppCenter.start(application,"49b9efa3-e1e1-48eb-9884-d2398de6e643",Analytics::class.java,Crashes::class.java)
+        AppCenter.start(application,"key",Analytics::class.java,Crashes::class.java)
 
         binding.btnCrashApplication.setOnClickListener {
             Crashes.generateTestCrash()
