@@ -18,7 +18,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        AppCenter.start(application,"key",Analytics::class.java,Crashes::class.java)
+        AppCenter.start(application,"c22cbf25-c462-412c-8d7c-4879139e6cda",Analytics::class.java,Crashes::class.java)
+
 
         binding.calculateButton.setOnClickListener {
 
