@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         AppCenter.start(application,"key",Analytics::class.java,Crashes::class.java)
 
-        binding.btnCrashApplication.setOnClickListener {
+        binding.calculateButton.setOnClickListener {
             Crashes.generateTestCrash()
         }
     }
